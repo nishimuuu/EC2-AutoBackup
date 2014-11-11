@@ -1,0 +1,5 @@
+useast: ec2.us-east-1.amazonaws.com
+uswest: ec2.us-west-1.amazonaws.com
+eu:     ec2.eu-west-1.amazonaws.com
+si:     ec2.ap-southeast-1.amazonaws.com
+jp:     ec2.ap-northeast-1.amazonaws.com
