@@ -12,8 +12,13 @@ region.each_value do |region|
     target_ec2 = ec2.instances[instance.id]
     image_name = "_Auto Backup_#{Time.now.strftime("%F")}_#{target_ec2.tags["Name"]}"
     puts "create AMI: #{target_ec2.tags["Name"]}"
-    image = target_ec2.create_image(image_name, {no_reboot: true})
+    #image = target_ec2.create_image(image_name, {no_reboot: true})
+  end
+
+  rds = AWS::RDS.new
+  p rds.methods
+  rds.db_instances.each do |instance|
+    p instance.methods
+
   end
 end
-
-
